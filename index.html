@@ -5,11 +5,34 @@
   <style>
 
 
+
+    @media screen and (max-width:768px){
+      .footer__list{
+          display: flex;
+          width: 100%;
+  justify-content: space-around;
+          flex-direction: columb;
+      }
+  
+  }
+  
+  @media (min-width: 960px){
+.body{
+
+  display: flex;
+  align-items: center;
+  padding: 0;
+
+}
+    }
+
     
     body {
         
         background-color: #333; /* Cor de fundo escura */
         color: #fff; /* Cor do texto */
+        
+        
       }
 
       header{
@@ -20,6 +43,7 @@
 
       li{
         margin: 0.6rem ;
+        font-size: 15px;
       }
 
 
@@ -91,8 +115,10 @@ font-size: 30px;
     /* Estilos para a resolução de dispositivos móveis */
     @media screen and (max-width: 600px) {
       .tab button {
+
         padding: 10px;
         font-size: 14px;
+
       }
 
       .tabcontent {
@@ -170,7 +196,7 @@ font-size: 30px;
         
         color: lime; 
         font-family: "Courier";
-        font-size: 20px;  
+        font-size: 15px;  
         
         
             margin: 0;
@@ -196,6 +222,7 @@ font-size: 30px;
       .aba1 a{
         color: lime;
         text-decoration: none;
+        
       }
       
       span{
@@ -236,12 +263,18 @@ font-size: 30px;
 </head>
 <body>
 <header>
-    
+    <div class="alingintens">
+
+   
     <div class="conteudoheader">
         
+      
         <div class="container">
+          
             <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-           
+            <div class="rounded-image"> 
+              <img src="img/perfilgit.JPG" width="200" height="200" alt=""></div>
+            </div>
             
         </div>
     </div>
@@ -256,19 +289,16 @@ font-size: 30px;
 
   <div id="Tab1" class="tabcontent">
     <div class="alinharitens"> 
-    <div class="rounded-image"> 
-      <img src="img/perfilgit.JPG" width="200" height="200" alt=""></div>
-    </div>
+    
     <h3>
   
 Breve Apresentação   </h3>
     <p>
         <section>
            <ul class="aba1">
-             <li>Olá! Meu nome é Eder Natan, tenho 21 anos e sou estudante de Engenharia da Computação . :/ </li>
+             <li>Olá! Meu nome é Eder Natan, tenho 21 anos e sou estudante de Engenharia da Computação. :/ </li>
              <li>Sou apaixonado por tecnologia e estou constantemente buscando conhecimento e aprimorando minhas habilidades nessa área.</li>
              <li>A computação sempre despertou minha curiosidade desde cedo, e ao longo dos anos, pude perceber como a área da engenharia da computação é fundamental para o desenvolvimento de soluções inovadoras e impactantes, estou sempre em busca de desafios e oportunidades para aplicar meus conhecimentos teóricos e práticos, seja desenvolvendo softwares, projetando sistemas ou trabalhando com eletrônica e hardware.</li>
-             <li>Além disso, sou uma pessoa dedicada, organizada e comprometida com o meu trabalho.</li>
              <li>Estou empolgado em seguir na minha jornada acadêmica e profissional em Engenharia da Computação, buscando sempre aprender, crescer e contribuir para o avanço tecnológico e o desenvolvimento da sociedade.</li>
              <li>Se você tiver algum projeto interessante ou oportunidade de trabalho, ficarei feliz em participar e contribuir com meu conhecimento e entusiasmo pela computação. Muito obrigado pela atenção e espero poder contribuir de forma positiva para o seu projeto ou empresa. </li>
             </p> 
@@ -294,9 +324,14 @@ Breve Apresentação   </h3>
 
   </div>
 
+</div>
+
 
   <footer>
-    <p>&copy; 2023 EderNatandev. Todos os direitos reservados.</p>
+    <div class="footer"> 
+      <p>&copy; 2023 EderNatandev. Todos os direitos reservados.</p>
+
+    </div>
   </footer>
 
 
