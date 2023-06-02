@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+
+
+    
+    body {
+        
+        background-color: #333; /* Cor de fundo escura */
+        color: #fff; /* Cor do texto */
+      }
+
+      li{
+        margin: 0.6rem ;
+      }
+
+
+      /* efeito do nome */
+      h1 { 
+        box-shadow: .6em 0 0 #333;
+        margin: 1.6rem 1rem;
+        width: 28ch;
+        overflow: hidden;
+        color: #FFF;
+        white-space: nowrap;
+        animation: caret 3.2s step-end infinite alternate,
+                   type 3s steps(28, end)
+      }
+
+h3{
+    margin: 2rem 1rem;
+color: #dd7732;
+font-size: 30px;
+}
+
+      @keyframes type {
+        0% {
+          width: 0;
+        }
+      
+      }
+      @keyframes caret { 
+        50% { 
+          box-shadow: .6em 0 0 transparent;
+        }
+      }
+    
+    /* Estilos para a resolução de computador */
+    .tab {
+        font-family: "Comic Sans MS", cursive;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+
+    .tab button {
+        font-family: "Comic Sans MS", cursive;
+        width: 50%;
+      background-color: inherit;
+      float: left;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 20px;
+      color: #dd7732;
+    }
+
+    .tab button.active {
+      background-color: #ccc;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+
+    /* Estilos para a resolução de dispositivos móveis */
+    @media screen and (max-width: 600px) {
+      .tab button {
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .tabcontent {
+        font-family: "Comic Sans MS", cursive;
+        padding: 4px 8px;
+      }
+    }
+
+
+
+/* css style coding  */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.container p span.typed-text {
+  font-weight: normal;
+  color: #dd7732;
+}
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.container p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* *-----* */ 
+
+    .conteudoheader{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+       
+    }
+    .rounded-image {
+        width: 200px; /* Defina a largura desejada */
+        height: 200px; /* Defina a altura desejada */
+        border-radius: 100px; /* Valor do raio do arredondamento dos cantos */
+        overflow: hidden;
+      }
+     /* animação Aba 1 */
+     .aba1{
+        
+        
+        color: lime; 
+        font-family: "Courier";
+        font-size: 20px;  
+        
+        
+            margin: 0;
+            padding: 0;
+          
+          .container {
+            width: 100%;
+           
+            margin: 0 auto;
+            padding: 20px;
+          }
+          
+          .texto {
+            text-align: justify;
+          }
+
+      }
+      
+      .aba1:nth-child(2){
+        animation: type2 8s steps(60, end);
+      }
+      
+      .aba1 a{
+        color: lime;
+        text-decoration: none;
+      }
+      
+      span{
+        animation: blink 1s infinite;
+      }
+      
+      @keyframes type{ 
+        from { width: 0; } 
+      } 
+      
+      @keyframes type2{
+        0%{width: 0;}
+        50%{width: 0;}
+        100%{ width: 100; } 
+      } 
+      
+      @keyframes blink{
+        to{opacity: .0;}
+      }
+      
+      ::selection{
+        background: black;
+      }
+  </style>
+
+
+
+
+</head>
+<body>
+<header>
+    <div class="conteudoheader">
+        
+        <div class="rounded-image"> 
+
+            <img src="img/perfilgit.JPG" width="200" height="200" alt="">
+        </div>
+        <div class="container">
+            <p>Coding is <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            <H1>Eder Natan Azevedo Figueiredo.</H1>
+            
+        </div>
+    </div>
+    
+</header>
+
+  <div class="tab">
+    <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">Quem sou ? </button>
+    <button class="tablinks" onclick="openTab(event, 'Tab2')">Resumo das qualificações </button>
+    <button class="tablinks" onclick="openTab(event, 'Tab3')"> </button>
+  </div>  
+
+  <div id="Tab1" class="tabcontent">
+
+    <h3>Breve Apresentação  </h3>
+    <p>
+        <section>
+           <ul class="aba1">
+             <li>Olá! Meu nome é Eder Natan, tenho 21 anos e sou estudante de Engenharia da Computação . :/ </li>
+             <li>Sou apaixonado por tecnologia e estou constantemente buscando conhecimento e aprimorando minhas habilidades nessa área.</li>
+             <li>A computação sempre despertou minha curiosidade desde cedo, e ao longo dos anos, pude perceber como a área da engenharia da computação é fundamental para o desenvolvimento de soluções inovadoras e impactantes, estou sempre em busca de desafios e oportunidades para aplicar meus conhecimentos teóricos e práticos, seja desenvolvendo softwares, projetando sistemas ou trabalhando com eletrônica e hardware.</li>
+             <li>Além disso, sou uma pessoa dedicada, organizada e comprometida com o meu trabalho.</li>
+             <li>Estou empolgado em seguir na minha jornada acadêmica e profissional em Engenharia da Computação, buscando sempre aprender, crescer e contribuir para o avanço tecnológico e o desenvolvimento da sociedade.</li>
+             <li>Se você tiver algum projeto interessante ou oportunidade de trabalho, ficarei feliz em participar e contribuir com meu conhecimento e entusiasmo pela computação. Muito obrigado pela atenção e espero poder contribuir de forma positiva para o seu projeto ou empresa. </li>
+            </p> 
+      <a href="https://www.linkedin.com/in/edernatandev/" title="Eder Natan "> Clique aqui e saiba mais...</a> 
+    <span>|</span></p> 
+   
+           </ul>
+         </section>
+  </div>
+
+  <div id="Tab2" class="tabcontent">
+    <h3>Certificações </h3>
+    <p>Exemplo de conteúdo para a segunda aba.</p>
+  </div>
+
+  <div id="Tab3" class="tabcontent">
+    
+    <p></p>
+  </div>
+
+  <div>
+<h4>conteudo </h4>
+
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023 EderNatandev. Todos os direitos reservados.</p>
+  </footer>
+
+
+
+
+
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+
+    document.getElementById("defaultOpen").click();
+
+
+
+    /* scrpits do css coding header */
+    const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["hard", "fun", "a journey", "LIFE"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+  if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+}); 
+
+  </script>
+</body>
+</html>
